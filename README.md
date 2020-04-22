@@ -8,7 +8,7 @@ Aplicación web para conocer las estadisticas de una serie de televisión. Podr�
 # Screenshots / Capturas
 ![Demo_Image_1](https://i.imgur.com/YUZ87lx.png)
 ---
-![Demo_Image_1](https://i.imgur.com/2GodakL.png)
+![Demo_Image_1](https://i.imgur.com/74OYPET.png)
 
 
 # Libraries Used / Librerias Utilizadas
