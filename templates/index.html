@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %} TV Show Status {% endblock %}
+
+{% block head %}
+    {{ super() }}
+    <Style>
+        html, body {
+            height: 100%;
+        }
+
+        .container {
+            height: 100%;
+            font-family: 'Passion One', sans-serif;
+        }
+
+        p {
+            height:100%;
+            font-family: 'Passion One', sans-serif;
+        }
+    </Style>
+{% endblock %}
+
+{% block content %}
+
+<div class="page-holder bg-cover">
+
+
+
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12"><br>
+                <img src="/static/logo.png">
+            </div>
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-lg-12">
+                <h3 class="text-uppercase font-weight-bold">Pick a TV Show to see a detailed analysis</h3><br>
+            </div>
+        </div>
+
+
+        <div class="row ">
+            <div class="col-lg-12 my-auto text-center">
+                <form method="post" enctype="multipart/form-data">
+                    {{ form.hidden_tag() }}
+                    <div class="form-field">{{ form.name.label }} {{ form.name(size=20) }}</div><br>
+
+
+                    <button type="submit" id="sub" class="btn btn-dark">Submit</button>
+                </form>
+{#                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif"#}
+{#                     id="img" style="display:none"/ >#}
+
+                <img src="https://i.gifer.com/YCZH.gif" id="img" style="display:none"/ >
+
+            </div>
+        </div>
+
+
+
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+
+    <script>
+        $('#sub').click(function () {
+            $('#img').show();
+            $('#comment').css('display', 'block');
+        });
+    </script>
+{% endblock %}
